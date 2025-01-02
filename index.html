@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-image: url('bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .toolbar {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .logo-container {
+            text-align: center;
+            padding: 20px;
+            color: #fff; /* Set text color to white */
+        }
+
+        .logo {
+            max-width: 80%;
+            height: auto;
+        }
+
+        .download-button {
+            display: block;
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px auto;
+            max-width: 250px;
+            transition: background-color 0.3s ease-in-out; /* Add transition effect */
+        }
+
+        .download-button:hover {
+            background-color: #45a049; /* Change color on hover */
+        }
+
+        .download-button.button-clicked {
+            background-color: #45a049; /* Change color when clicked */
+        }
+
+        @media (max-width: 768px) {
+            .toolbar {
+                padding: 10px;
+            }
+        }
+    </style>
+    <title>Naimul App Store</title>
+</head>
+<body>
+    <div class="toolbar">
+        <h2>Naimul App Store</h2>
+    </div>
+
+    <div class="logo-container">
+        <img src="hayday.png" alt="Logo" class="logo">
+        <h4>If you have old version. first uninstall old version.Then install new version</h4>
+        <h3>Hay Day Info version 1.1</h3>
+    </div>
+
+    <a href="https://www.naimulappstore.xyz/ntas/music/hayday_info_version_1.1.apk" class="download-button"  onclick="handleButtonClick(this)">Download</a>
+
+    <script>
+        function handleButtonClick(button) {
+            button.classList.add("button-clicked");
+        }
+    </script>
+</body>
+</html>
